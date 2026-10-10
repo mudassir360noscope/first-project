@@ -1,0 +1,20 @@
+ <h1>Welcome to My First Website!</h1>
+
+  <div class="card">
+    <h2>Hello, I'm a beginner coder!</h2>
+    <p>I'm learning to build my first project with Hack Club.</p>
+    <p id="score">My button has been clicked 0 times.</p>
+    <button onclick="countClick()">Click Me!</button>
+  </div>
+
+  <script>
+    let clicks = 0;
+
+    function countClick() {
+      clicks++;
+      document.getElementById("score").textContent =
+        "My button has been clicked " + clicks + " times.";
+    }
+  </script>
+</body>
+</html>
